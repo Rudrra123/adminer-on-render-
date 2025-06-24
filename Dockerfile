@@ -1,10 +1,5 @@
-FROM dpage/pgadmin4:8.6
+# Official Adminer image use karein
+FROM adminer
 
-ENV PGADMIN_DEFAULT_EMAIL=admin@rudrra.com
-ENV PGADMIN_DEFAULT_PASSWORD=admin123
-
-EXPOSE 80
-
-USER 1000
-
-CMD ["/usr/local/bin/python3", "/pgadmin4/pgAdmin4.py"]
+# (Optional) Port ko explicitly expose karein. Render aapke liye alag configuration karega.
+EXPOSE 8080
