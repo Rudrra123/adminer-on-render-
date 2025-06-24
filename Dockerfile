@@ -1,2 +1,6 @@
-FROM adminer
-EXPOSE 8080
+FROM dpage/pgadmin4
+
+ENV PGADMIN_DEFAULT_EMAIL=admin@rudrra.com
+ENV PGADMIN_DEFAULT_PASSWORD=admin123
+
+EXPOSE 80
