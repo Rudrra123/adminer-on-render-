@@ -1,6 +1,5 @@
-FROM dpage/pgadmin4
+# Official Adminer image use karein
+FROM adminer
 
-ENV PGADMIN_DEFAULT_EMAIL=admin@example.com
-ENV PGADMIN_DEFAULT_PASSWORD=admin123
-
-EXPOSE 80
+# (Optional) Port ko explicitly expose karein. Render aapke liye alag configuration karega.
+EXPOSE 8080
