@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: pgadmin-on-render
+    env: docker
+    branch: main
+    dockerfilePath: Dockerfile
+    port: 80
+    envVars:
+      - key: PGADMIN_DEFAULT_EMAIL
+        value: admin@example.com
+      - key: PGADMIN_DEFAULT_PASSWORD
+        value: admin123
