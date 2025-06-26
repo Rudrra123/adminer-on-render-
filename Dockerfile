@@ -1,9 +1,9 @@
-# Official Adminer image use karein
-FROM adminer
+# Official PgAdmin image use karein
+FROM dpage/pgadmin4
 
-# (Optional) Port ko explicitly expose karein. Render aapke liye alag configuration karega.
-EXPOSE 8080
+# PgAdmin runs on port 80 internally
+EXPOSE 80
 
-
-
-
+# Optional: Set default environment variables here or use Render Dashboard
+ENV PGADMIN_DEFAULT_EMAIL=admin@example.com
+ENV PGADMIN_DEFAULT_PASSWORD=admin123
